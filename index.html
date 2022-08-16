@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="head" id="head">
+      <h1>Интернет магазин</h1>
+      <div>
+        <button class="btn-cart" id="btncart">Корзина</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cart" id="cart"></div>
+
+      <div class="shop">
+        <h2>Товары</h2>
+
+        <input
+          id="filter"
+          type="text"
+          class="filter"
+          placeholder="Введите название товара..."
+        />
+
+        <ul class="products" id="products">
+          <p>Loading...</p>
+        </ul>
+      </div>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
+
+    <script src="productService.js"></script>
+    <script src="cartService.js"></script>
+    <script src="htmlService.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
